@@ -42,7 +42,11 @@
   <version>7.6.0</version>
   <scope>test</scope>
 </dependency>
-
+<dependency>
+<groupId>org.seleniumhq.selenium</groupId>
+<artifactId>selenium-devtools-v86</artifactId>
+<version>4.5.0</version>
+</dependency>
 
  
   <dependency>
