@@ -29,10 +29,16 @@ public class TestBase
             //chrome
 		
 			System.setProperty("webdriver.chrome.driver",Constants.CHROME_DRIVER_PATH);
-			ChromeOptions options = new ChromeOptions();
-			options.addArguments("--remote-allow-origins=*");
-			driver = new ChromeDriver(options);
+// 			ChromeOptions options = new ChromeOptions();
+// 			options.addArguments("--remote-allow-origins=*");
+// 			driver = new ChromeDriver(options);
 //			
+			ChromeOptions ops = new ChromeOptions();
+                        ops.addArguments("--remote-allow-origins=*");
+                        WebDriver driver = new ChromeDriver(ops);
+			
+			
+			
 //			//edge
 // 			
 // 			System.setProperty("webdriver.edge.driver", "D:\\msedgedriver.exe");
